@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lam's Perfume | Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/products.js"></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="brand-logo">Lam's Perfume</div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="cart.html">
+        <img src="images/cart-icon.png" alt="Cart Icon" />
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="products-main">
+
+    <div class="products-header" style="text-align:center;">
+      <h1>Our Perfumes</h1>
+      <div class="filter-bar" style="display:inline-block;">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+          <option value="Unisex">Unisex</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-grid" id="product-container">
+    </div>
+
+  </main>
+
+  <footer class="main-footer" style="text-align:center;">
+    <p>© 2024 Lam's Perfume. All Rights Reserved.</p>
+    <p>123 Perfume St, Aroma City | (123) 456-7890</p>
+  </footer>
+
+</body>
+</html>

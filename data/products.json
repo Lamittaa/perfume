@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "title": "Aqua Mist (Men)",
+    "category": "Men",
+    "price": 50,
+    "image": "images/perfume1.jpg",
+    "description": "A refreshing blend of oceanic notes with subtle florals."
+  },
+  {
+    "id": 2,
+    "title": "Spice Noir (Men)",
+    "category": "Men",
+    "price": 60,
+    "image": "images/perfume2.jpg",
+    "description": "Bold peppery notes with warm undertones for the adventurous man."
+  },
+  {
+    "id": 3,
+    "title": "Cedar Forest (Men)",
+    "category": "Men",
+    "price": 55,
+    "image": "images/perfume3.jpg",
+    "description": "Earthy cedar layered with faint pine, perfect for everyday wear."
+  },
+  {
+    "id": 4,
+    "title": "Mountain Mist (Men)",
+    "category": "Men",
+    "price": 70,
+    "image": "images/perfume4.jpg",
+    "description": "Cool, crisp fragrance inspired by alpine peaks."
+  },
+  {
+    "id": 5,
+    "title": "Urban Night (Men)",
+    "category": "Men",
+    "price": 68,
+    "image": "images/perfume5.jpg",
+    "description": "Modern musk with a hint of spice for a bold impression."
+  },
+  {
+    "id": 6,
+    "title": "Royal Oud (Men)",
+    "category": "Men",
+    "price": 90,
+    "image": "images/perfume6.jpg",
+    "description": "Luxurious oud base with subtle rose top notes."
+  },
+  {
+    "id": 7,
+    "title": "Citrus Breeze (Men)",
+    "category": "Men",
+    "price": 52,
+    "image": "images/perfume7.jpg",
+    "description": "Zesty citrus with light herbal undertones for a fresh feel."
+  },
+  {
+    "id": 8,
+    "title": "Velvet Tonka (Men)",
+    "category": "Men",
+    "price": 78,
+    "image": "images/perfume8.jpg",
+    "description": "Smooth tonka bean aroma balanced with mild spices."
+  },
+
+  {
+    "id": 9,
+    "title": "Rose Bloom (Women)",
+    "category": "Women",
+    "price": 65,
+    "image": "images/perfume9.jpg",
+    "description": "Classic rose with a sweet, feminine twist."
+  },
+  {
+    "id": 10,
+    "title": "Jasmine Sky (Women)",
+    "category": "Women",
+    "price": 75,
+    "image": "images/perfume10.jpg",
+    "description": "Light jasmine petals combined with fresh lily notes."
+  },
+  {
+    "id": 11,
+    "title": "Amber Aurora (Women)",
+    "category": "Women",
+    "price": 80,
+    "image": "images/perfume11.jpg",
+    "description": "Warm amber accentuated by subtle floral hints."
+  },
+  {
+    "id": 12,
+    "title": "Glamour Vanilla (Women)",
+    "category": "Women",
+    "price": 72,
+    "image": "images/perfume12.jpg",
+    "description": "Vanilla base enriched with creamy coconut for a decadent scent."
+  },
+  {
+    "id": 13,
+    "title": "Sugar Blossom (Women)",
+    "category": "Women",
+    "price": 60,
+    "image": "images/perfume13.jpg",
+    "description": "Soft candy-floral fragrance for a youthful vibe."
+  },
+  {
+    "id": 14,
+    "title": "Moonlit Iris (Women)",
+    "category": "Women",
+    "price": 85,
+    "image": "images/perfume14.jpg",
+    "description": "Iris and violet notes glimmer under a subtle musk base."
+  },
+  {
+    "id": 15,
+    "title": "Peach Blossom (Women)",
+    "category": "Women",
+    "price": 58,
+    "image": "images/perfume15.jpg",
+    "description": "Lively peach combined with subtle floral undertones."
+  },
+  {
+    "id": 16,
+    "title": "Gardenia Mist (Women)",
+    "category": "Women",
+    "price": 70,
+    "image": "images/perfume16.jpg",
+    "description": "Fresh gardenia bouquet with a crisp green base."
+  },
+
+  {
+    "id": 17,
+    "title": "Golden Sand (Unisex)",
+    "category": "Unisex",
+    "price": 62,
+    "image": "images/perfume17.jpg",
+    "description": "A balanced blend of warm spices suitable for all."
+  },
+  {
+    "id": 18,
+    "title": "Oceanic Drift (Unisex)",
+    "category": "Unisex",
+    "price": 66,
+    "image": "images/perfume18.jpg",
+    "description": "Aquatic notes with a clean, modern finish."
+  },
+  {
+    "id": 19,
+    "title": "Midnight Bergamot (Unisex)",
+    "category": "Unisex",
+    "price": 70,
+    "image": "images/perfume19.jpg",
+    "description": "Bright citrus softened by a hint of sandalwood."
+  },
+  {
+    "id": 20,
+    "title": "Silk Musk (Unisex)",
+    "category": "Unisex",
+    "price": 78,
+    "image": "images/perfume20.jpg",
+    "description": "Gentle musk with whispers of floral top notes."
+  },
+  {
+    "id": 21,
+    "title": "Woody Sage (Unisex)",
+    "category": "Unisex",
+    "price": 64,
+    "image": "images/perfume21.jpg",
+    "description": "Earthy sage balanced by an airy driftwood aroma."
+  },
+  {
+    "id": 22,
+    "title": "Lavender Fields (Unisex)",
+    "category": "Unisex",
+    "price": 67,
+    "image": "images/perfume22.jpg",
+    "description": "Pure lavender essence with an herbal, calming base."
+  },
+  {
+    "id": 23,
+    "title": "Cacao Ember (Unisex)",
+    "category": "Unisex",
+    "price": 82,
+    "image": "images/perfume23.jpg",
+    "description": "Smooth cocoa merged with mild smoky undertones."
+  },
+  {
+    "id": 24,
+    "title": "Citrus Velvet (Unisex)",
+    "category": "Unisex",
+    "price": 75,
+    "image": "images/perfume24.jpg",
+    "description": "Refreshing citrus softened by a velvet amber finish."
+  }
+]

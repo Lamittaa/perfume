@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lam's Perfume | Cart</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="brand-logo">Lam's Perfume</div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="cart.html" class="active">
+        <img src="images/cart-icon.png" alt="Cart Icon" />
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="cart-main">
+    <section class="cart-section">
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-container"></div>
+      <div class="cart-total">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+      </div>
+      <button class="btn-checkout" onclick="checkout()">Buy Now</button>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2024 Lam's Perfume. All Rights Reserved.</p>
+    <p>123 Perfume St, Aroma City | (123) 456-7890</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

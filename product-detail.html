@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lam's Perfume | Product Detail</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="brand-logo">Lam's Perfume</div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="cart.html">
+        <img src="images/cart-icon.png" alt="Cart Icon" />
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="detail-main">
+    <div class="detail-container" id="product-detail-container"></div>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2024 Lam's Perfume. All Rights Reserved.</p>
+    <p>123 Perfume St, Aroma City | (123) 456-7890</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get("id"); 
+      if(!productId) {
+        $("#product-detail-container").html("<p>No product ID provided.</p>");
+        return;
+      }
+
+      $.ajax({
+        url: "data/products.json",
+        method: "GET",
+        dataType: "json",
+        success: function(data) {
+          const pid = parseInt(productId, 10);
+          const product = data.find(item => item.id === pid);
+
+          if(!product) {
+            $("#product-detail-container").html("<p>Product not found.</p>");
+            return;
+          }
+
+          const detailHTML = `
+            <div class="detail-image">
+              <img src="${product.image}" alt="${product.title}" />
+            </div>
+            <div class="detail-info">
+              <h1>${product.title}</h1>
+              <p class="detail-price">$${product.price.toFixed(2)}</p>
+              <p class="detail-desc">${product.description}</p>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          `;
+          $("#product-detail-container").html(detailHTML);
+
+          $(".btn-add-cart").on("click", function(){
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const existingItem = cart.find(item => item.id === product.id);
+            if (existingItem) {
+              existingItem.quantity++;
+            } else {
+              cart.push({...product, quantity: 1});
+            }
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+            alert(`${product.title} added to cart!`);
+          });
+        },
+        error: function(err) {
+          $("#product-detail-container").text("Unable to load product data.");
+          console.error("Error loading JSON data:", err);
+        }
+      });
+
+      function updateCartCount() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let totalItems = 0;
+        cart.forEach(item => totalItems += item.quantity);
+        $(".cart-count").text(totalItems);
+      }
+      updateCartCount();
+    });
+  </script>
+</body>
+</html>
